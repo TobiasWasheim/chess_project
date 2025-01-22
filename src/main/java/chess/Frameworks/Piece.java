@@ -2,8 +2,10 @@ package chess.Frameworks;
 
 public interface Piece {
 
-    Status isMovementAllowed(int fromRow, int fromCol, int toRow, int toCol);
+    int getHealth();
 
-    Chessboard controlSquares();
+    int getValue();
+
+    Status isMovementAllowed(int fromRow, int fromCol, int toRow, int toCol);
 
 }

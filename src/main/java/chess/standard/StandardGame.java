@@ -43,4 +43,14 @@ public class StandardGame implements Game {
         turnNumber++;
     }
 
+    @Override
+    public Chessboard getChessboard() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Piece getPieceAt(int row, int column) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
 }
