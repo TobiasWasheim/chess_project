@@ -1,5 +1,6 @@
 package chess.standard;
 
+import chess.Frameworks.Chessboard;
 import chess.Frameworks.Color;
 import chess.Frameworks.Game;
 import chess.Frameworks.Piece;
@@ -8,9 +9,11 @@ import chess.Frameworks.Status;
 public class StandardGame implements Game {
 
     private int turnNumber = 0;
+    private Chessboard chessboard;
 
-    public StandardGame() {
+    public StandardGame(Chessboard chessboard) {
         // Chess board
+        this.chessboard = chessboard;
 
     }
 

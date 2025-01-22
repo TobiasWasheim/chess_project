@@ -31,4 +31,14 @@ public class ClassicChessboard implements Chessboard {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
+    public int getRowLength() {
+        return 8;
+    }
+
+    @Override
+    public int getColumnLength() {
+        return 8;
+    }
+
 }
