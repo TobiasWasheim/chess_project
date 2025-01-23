@@ -7,11 +7,6 @@ import chess.standard.GameConstants;
 public class EmptySquare implements Piece {
 
     @Override
-    public int getHealth() {
-        return 0;
-    }
-
-    @Override
     public int getValue() {
         return 0;
     }
@@ -24,14 +19,14 @@ public class EmptySquare implements Piece {
 
     @Override
     public String getPieceType() {
+        // has empty square type
         return GameConstants.EMPTYSQUARE;
     }
 
     @Override
     public Color getColor() {
+        // has non-color (might change that in the future to get black/white chess board?)
         return Color.NON;
     }
 
-    @Override
-    public void setHealth(int value) {}
 }

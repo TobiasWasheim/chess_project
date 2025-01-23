@@ -2,6 +2,9 @@ package chess.PieceTests;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import chess.Frameworks.Color;
+import chess.standard.GameConstants;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,13 +19,6 @@ public class EmptySquareTest {
     public void setup() {
         // given an empty square
         emptySquare = new EmptySquare();
-    }
-
-    @Test
-    public void shouldHaveHealth0() {
-        // given, assert that health is zero
-        int health = emptySquare.getHealth();
-        assertThat(health,is(0));
     }
 
     @Test
@@ -51,5 +47,21 @@ public class EmptySquareTest {
         // When moving diagonally
         boolean isMovementPossible4 = emptySquare.isMovementPossible(1, 1, 4, 4);
         assertThat(isMovementPossible4, is(false));
+    }
+
+    @Test
+    public void shouldHavePieceTypeEmptySquare() {
+        // given, assert that type is Empty-Square
+        String pieceType = emptySquare.getPieceType();
+
+        assertThat(pieceType,is(GameConstants.EMPTYSQUARE));
+    }
+
+    @Test
+    public void shouldHaveColorNon() {
+        // given, assert that the color is NON
+        Color color = emptySquare.getColor();
+
+        assertThat(color,is(Color.NON));
     }
 }
