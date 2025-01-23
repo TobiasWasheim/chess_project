@@ -8,12 +8,15 @@ import chess.Frameworks.Status;
 
 public class StandardGame implements Game {
 
-    private int turnNumber = 0;
-    private Chessboard chessboard;
+    private int turnNumber;
 
-    public StandardGame(Chessboard chessboard) {
-        // Chess board
-        this.chessboard = chessboard;
+    public StandardGame() {
+        // Initialize turn number
+        this.turnNumber = 0;
+        
+        // Initialize chessboard
+
+
 
     }
 
@@ -34,8 +37,8 @@ public class StandardGame implements Game {
     }
 
     @Override
-    public Status movePiece(Piece piece) {
-        return Status.OK;
+    public Status movePiece(Piece piece, int fromRow, int fromCol, int toRow, int toCol) {
+        return null;
     }
 
     @Override
@@ -45,12 +48,12 @@ public class StandardGame implements Game {
 
     @Override
     public Chessboard getChessboard() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return null;
     }
 
     @Override
     public Piece getPieceAt(int row, int column) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return null;
     }
 
 }

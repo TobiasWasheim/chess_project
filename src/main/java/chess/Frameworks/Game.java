@@ -12,7 +12,7 @@ public interface Game {
 
     int getTurnNumber();
 
-    Status movePiece(Piece piece);
+    Status movePiece(Piece piece, int fromRow, int fromCol, int toRow, int toCol);
 
     void endTurn();
 

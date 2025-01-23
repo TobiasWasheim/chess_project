@@ -10,5 +10,7 @@ public class GameConstants {
     public static final String QUEEN = "Queen";
     public static final String KING = "King";
     
+    public static final String EMPTYSQUARE = "Empty-Square";
+    
 
 }

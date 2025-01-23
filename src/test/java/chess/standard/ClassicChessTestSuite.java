@@ -12,11 +12,12 @@ public class ClassicChessTestSuite {
     public void shouldgetTurnNumberReturn0ForTurn1() {
         // Given a game
         StandardGame game = new StandardGame();
-
+        // hi
         // When doing nothing
         int turnNumber = game.getTurnNumber();
         // Assert that getTurnNumber() should return 0
         assertThat(turnNumber, is(0));
+        System.out.println("test!!!!!!!!!!!!!");
     }
 
     @Test
