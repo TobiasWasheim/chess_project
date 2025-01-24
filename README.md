@@ -31,12 +31,28 @@ square in each direction and shoot an
 arrow with a range of two squares. A move 
 is used on either moving the piece or 
 shooting. 
-### Status on development
+### Status on Development
 Currently developing and testing all the 
-pieces
-### Thoughts on future features
+pieces.
+### Thoughts on Future Features
 - Adding two buttons to surrender and
 offer draw to opponent.
 - Adding a clock with customizable times.
+### Current Thoughts
+**24/01/2025**
 
+I've so far developed the empty square,
+the rook, and the knight. I'm working on the
+others. I have long thought that I should
+implement castling into the rook object.
+However, since castling is a game rule I've
+changed my mind. I'm going to implement
+that feature in the game implementation
+object which is responsible for the rules
+of the game. 
 
+I've been thinking about should the pieces be responsible for defining their movement? My current thought: Yes. 
+Maybe later no. I can always refactor in the future...
+
+Another thought: The king and and pawn depends on the chess board.... They are not like the other pieces.
+I don't want any special functions to assert if it is a pawn piece in my game. Have to come up with a solution later...
