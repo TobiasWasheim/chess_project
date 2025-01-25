@@ -6,6 +6,18 @@ Testing class EmptySquare
 - [X] Should never be allowed to move
 - [X] getPieceType should return "Empty-Square" String
 - [X] Should have color NON
+ 
+Testing class Pawn
+=================
+- [ ] Should have value 1
+- [ ] Should be piece type "Pawn"
+- [ ] A white pawn should have color WHITE
+- [ ] A black pawn should have color BLACK 
+- [ ] A white pawn can only move one square forward
+- [ ] A Black pawn can only move one square backward
+- [ ] If a white pawn is on the second row, it can move two squares forwards
+- [ ] If a black pawn is on the second last row, it can move two squares backwards
+- [ ] attack diagonally...
 
 Testing class Rook
 ==================
@@ -29,23 +41,23 @@ Testing class Knight
 
 Testing class Bishop
 ===================
-- [ ] Should not be able to move straight
-- [ ] Should be able to move diagonally
-- [ ] Should be piece type "Bishop"
-- [ ] Should have value 3
-- [ ] A white bishop should have color WHITE
-- [ ] A black bishop should have color BLACK
+- [X] Should not be able to move straight
+- [X] Should be able to move diagonally
+- [X] Should be piece type "Bishop"
+- [X] Should have value 3
+- [X] A white bishop should have color WHITE
+- [X] A black bishop should have color BLACK
 
 Testing class Queen
 ===================
-- [ ] Should be able to move straight
-- [ ] Should be able to move to the side
-- [ ] Should be able to move diagonally
-- [ ] Should not be able to move like a knight
-- [ ] Should be piece type "Queen"
-- [ ] Should have value 9
-- [ ] A white Queen should have color WHITE
-- [ ] A black Queen should have color BLACK
+- [X] Should be able to move straight
+- [X] Should be able to move to the side
+- [X] Should be able to move diagonally
+- [X] Should not be able to move like a knight
+- [X] Should be piece type "Queen"
+- [X] Should have value 9
+- [X] A white Queen should have color WHITE
+- [X] A black Queen should have color BLACK
 
 Testing class King
 ==================
