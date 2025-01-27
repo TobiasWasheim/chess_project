@@ -32,8 +32,8 @@ arrow with a range of two squares. A move
 is used on either moving the piece or 
 shooting. 
 ### Status on Development
-Currently developing and testing all the 
-pieces.
+Finished developing and testing the pieces. Next step is to develop the game rules in "StandardGame". 
+
 ### Thoughts on Future Features
 - Adding two buttons to surrender and
 offer draw to opponent.
@@ -56,3 +56,12 @@ Maybe later no. I can always refactor in the future...
 
 Another thought: The king and and pawn depends on the chess board.... They are not like the other pieces.
 I don't want any special functions to assert if it is a pawn piece in my game. Have to come up with a solution later...
+
+**27/01/2025** 
+
+I've finished developing the pieces. Check and check mate is going to be a part of StandardGame since it's a rule of the game. 
+The king does not depend on a chess board since that would only be necessary if it checked for checks and checkmate.
+The pawn has to depend on a chessboard. 
+
+There's not much work left til I've developed the alphaChess variant. Next, I'm going to start on developing the 
+GUI. 
