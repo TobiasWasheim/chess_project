@@ -9,15 +9,18 @@ Testing class EmptySquare
  
 Testing class Pawn
 =================
-- [ ] Should have value 1
-- [ ] Should be piece type "Pawn"
-- [ ] A white pawn should have color WHITE
-- [ ] A black pawn should have color BLACK 
-- [ ] A white pawn can only move one square forward
-- [ ] A Black pawn can only move one square backward
-- [ ] If a white pawn is on the second row, it can move two squares forwards
-- [ ] If a black pawn is on the second last row, it can move two squares backwards
-- [ ] attack diagonally...
+- [X] Should have value 1
+- [X] Should be piece type "Pawn"
+- [X] A white pawn should have color WHITE
+- [X] A black pawn should have color BLACK 
+- [X] A white pawn can only move one square forward
+- [X] A Black pawn can only move one square backward
+- [X] If a white pawn is on the second row, it can move two squares forwards
+- [X] If a black pawn is on the second last row, it can move two squares backwards
+- [X] White pawn attacks black pawn diagonally forward 1 square
+- [X] White pawn cannot attack black pawn backwards 1 square
+- [X] Black pawn attacks white pawn diagonally backward 1 square
+- [X] Black pawn cannot attack white pawn forward 1 square
 
 Testing class Rook
 ==================
@@ -61,10 +64,10 @@ Testing class Queen
 
 Testing class King
 ==================
-- [ ] Should not be able to move two squares forward
-- [ ] Should be able to move one diagonally 
-- [ ] Should be able to move one square backwards
-- [ ] Should be piece type "King"
-- [ ] Should have value 0
-- [ ] A white King should have color WHITE
-- [ ] A black King should have color BLACK
+- [X] Should not be able to move two squares forward
+- [X] Should be able to move one diagonally 
+- [X] Should be able to move one square backwards
+- [X] Should be piece type "King"
+- [X] Should have value 0
+- [X] A white King should have color WHITE
+- [X] A black King should have color BLACK
