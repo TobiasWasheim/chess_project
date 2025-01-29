@@ -15,12 +15,6 @@ Testing class Pawn
 - [X] A black pawn should have color BLACK 
 - [X] A white pawn can only move one square forward
 - [X] A Black pawn can only move one square backward
-- [X] If a white pawn is on the second row, it can move two squares forwards
-- [X] If a black pawn is on the second last row, it can move two squares backwards
-- [X] White pawn attacks black pawn diagonally forward 1 square
-- [X] White pawn cannot attack black pawn backwards 1 square
-- [X] Black pawn attacks white pawn diagonally backward 1 square
-- [X] Black pawn cannot attack white pawn forward 1 square
 
 Testing class Rook
 ==================

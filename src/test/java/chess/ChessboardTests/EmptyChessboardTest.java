@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import chess.Frameworks.Chessboard;
-import chess.Strategies.ChessboardStrategy.EmptyChessboard;
+import chess.Chessboards.EmptyChessboard;
 
 public class EmptyChessboardTest {
 
@@ -39,7 +39,7 @@ public class EmptyChessboardTest {
     @Test
     public void shouldReturnPawnAtE5WhenItsThere() {
         // When we add a pawn to the field e5
-        Piece pawn = new Pawn(Color.WHITE, chessboard);
+        Piece pawn = new Pawn(Color.WHITE);
         chessboard.replacePieceAt(pawn, 5, 5);
         
         Piece pawnAtE5 = chessboard.getPieceAt(5, 5);

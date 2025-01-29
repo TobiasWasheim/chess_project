@@ -1,4 +1,4 @@
-package chess.Strategies.ChessboardStrategy;
+package chess.Chessboards;
 
 import chess.Frameworks.Chessboard;
 import chess.Frameworks.Piece;
@@ -9,7 +9,7 @@ public class EmptyChessboard implements Chessboard {
     /*
     Initialize a chess board with empty squares 
     */
-    private Piece[][] chessboard = 
+    private final Piece[][] chessboard =
     {    
         {new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare()},
         {new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare(), new EmptySquare()},
@@ -23,12 +23,12 @@ public class EmptyChessboard implements Chessboard {
 
     @Override
     public int getRowLength() {
-        return chessboard.length;
+        return chessboard[0].length;
     }
 
     @Override
     public int getColumnLength() {
-        return chessboard[0].length;
+        return chessboard.length;
     }
 
     @Override
@@ -38,11 +38,11 @@ public class EmptyChessboard implements Chessboard {
 
     @Override
     public Piece getPieceAt(int row, int column) {
-        return chessboard[row+1][column+1];
+        return chessboard[row-1][column-1];
     }
 
     @Override
     public void replacePieceAt(Piece piece, int row, int col) {
-        chessboard[row+1][col+1] = piece;
+        chessboard[row-1][col-1] = piece;
     }
 }
