@@ -5,6 +5,7 @@ import chess.Chessboards.EmptyChessboard;
 import chess.Frameworks.*;
 import chess.PieceTypes.Bishop;
 import chess.PieceTypes.Queen;
+import chess.PieceTypes.Rook;
 import chess.standard.StandardGame;
 import org.junit.jupiter.api.Test;
 
@@ -50,5 +51,19 @@ public class MovePieceTests {
         Status status = game.movePiece(pawn,7,1,6,1);
         // Then asserting that white cannot play with a piece that is black
         assertThat(status,is(Status.NOT_OWNER));
+    }
+
+    @Test
+    public void shouldNotAttackOwnPiece() {
+        // Given a game with an empty chessboard, a white bishop (e5) and rook (g7)
+        Chessboard chessboard = new EmptyChessboard();
+        chessboard.replacePieceAt(new Bishop(WHITE),5,5);
+        chessboard.replacePieceAt(new Rook(WHITE),7,7);
+        Game game = new StandardGame(chessboard);
+        // Bishop tries to attack rook
+        Piece bishop = game.getPieceAt(5,5);
+        Status status = game.movePiece(bishop, 5,5,7,7);
+        // Then assert that white cannot attack own piece
+        assertThat(status,is(Status.ATTACK_NOT_ALLOWED_ON_OWN_PIECE));
     }
 }

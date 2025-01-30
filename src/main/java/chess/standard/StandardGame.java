@@ -73,6 +73,10 @@ public class StandardGame implements Game {
             return Status.MOVE_OUT_OF_INDEX;
         }
 
+        // check that a piece does not attack another piece of same color
+        if (piece.getColor().equals(chessboard.getPieceAt(toRow,toCol).getColor())) {
+            return Status.ATTACK_NOT_ALLOWED_ON_OWN_PIECE;
+        }
 
         endTurn();
         return Status.OK;

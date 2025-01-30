@@ -20,3 +20,5 @@ Move piece
 - [X] Bishop is allowed to move diagonally within the chess board
 - [X] Queen cannot move outside of the chessboard
 - [X] White should not be able to move a black piece
+- [ ] White bishop cannot attack white rook
+- 
